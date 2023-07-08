@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.png" type="image/png" />
+    <title>Tip Calculator</title>
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- calculator -->
+    <section class="calculator-wrapper">
+      <!-- Title -->
+      <div class="title">
+        <h1>Tip calculator</h1>
+      </div>
+      <div class="container">
+        <!-- controls -->
+        <div class="controls">
+          <div class="input-control">
+            <label for="bill">Bill</label>
+            <input type="text" id="billAmount" />
+          </div>
+          <div class="input-control">
+            <label for="tip">Tip %</label>
+            <input type="text" id="percentage" />
+          </div>
+          <div class="input-control">
+            <label for="peoples">No of People</label>
+            <input type="text" id="people" />
+          </div>
+
+          <button class="calculate-btn" onclick="calculate();">
+            Calculate
+          </button>
+        </div>
+        <!-- Output -->
+        <div class="output">
+          <div
+            class="tip-output"
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+            "
+          >
+            <div class="heading">
+              <h1>Tip</h1>
+              <p>per person</p>
+            </div>
+            <div id="calculated-tip" class="output-field"></div>
+          </div>
+          <div
+            class="total-tip"
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+            "
+          >
+            <div class="heading">
+              <h1>Total Tip</h1>
+              <p>per person</p>
+            </div>
+
+            <div id="total-calculated-amount" class="output-field"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Script File -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
